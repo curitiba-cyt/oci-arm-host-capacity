@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+        
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -25,4 +25,5 @@ jobs:
           OCI_USER: ${{ secrets.OCI_USER }}
           OCI_FINGERPRINT: ${{ secrets.OCI_FINGERPRINT }}
           OCI_KEY: ${{ secrets.OCI_KEY }}
+          OCI_REGION: ${{ secrets.OCI_REGION }}
         run: php index.php
