@@ -1,8 +1,9 @@
+#
 name: Execute
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '* * * * *'
   workflow_dispatch:
 
 jobs:
